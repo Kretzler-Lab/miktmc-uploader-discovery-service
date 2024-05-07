@@ -1,159 +1,331 @@
 const kpmpMembers = [
     {
-        short: 'uw',
-        institution: 'University of Washington',
-        entityId: 'urn:mace:incommon:washington.edu'
+        short: 'umneptune',
+        institution: "0: University of Michigan",
+        entityId: "https://shibboleth.umich.edu/idp/shibboleth"
     },
     {
-        short: 'um',
-        institution: 'University of Michigan',
-        entityId: 'https://shibboleth.umich.edu/idp/shibboleth'
-    },
-    {
-        short: 'broad',
-        institution: 'Broad Institute',
-        entityId: 'https://idp01.broadinstitute.org/idp/shibboleth'
-    },
-    {
-        short: 'columbia',
-        institution: 'Columbia University',
+        short: 'columbiacure',
+        institution: '01: Columbia University',
         entityId: 'urn:mace:incommon:columbia.edu'
     },
     {
-        short: 'harvard',
-        institution: 'Harvard',
-        entityId: 'https://fed.huit.harvard.edu/idp/shibboleth'
+        short: "nyuneptune",
+        institution: "1: NYUMC",
+        entityId: "urn:mace:incommon:nyu.edu"
     },
     {
-        short: 'iu',
-        institution: 'Indiana University',
-        entityId: 'https://idp.login.iu.edu/idp/shibboleth'
+        short: "jhopneptune",
+        institution: "02: Johns-Hopkins",
+        entityId: "urn:mace:incommon:johnshopkins.edu"
     },
     {
-        short: 'THE',
-        institution: 'Ohio State University',
-        entityId: 'urn:mace:incommon:osu.edu'
+        short: "dukecure",
+        institution: "04: Duke Children’s Hospital Medical Center",
+        entityId: "urn:mace:incommon:duke.edu"
     },
     {
-        short: 'ucsf',
-        institution: 'UC San Francisco',
-        entityId: 'urn:mace:incommon:ucsf.edu'
+        short: 'cchmccure',
+        institution: "05: Cincinnati Children's Hospital Medical Center",
+        entityId: "https://access.research.cchmc.org/fed/idp"
     },
     {
-        short: 'utsw',
-        institution: 'UT Southwestern',
-        entityId: 'https://shib2.swmed.edu/idp/shibboleth'
+        short: "texastechcure",
+        institution: "07: Texas Tech University Health Sciences Center",
+        entityId: "https://msidp.ttuhsc.edu/adfs/services/trust"
+
     },
     {
-        short: 'ucsd',
-        institution: 'UC San Diego',
-        entityId: 'urn:mace:incommon:ucsd.edu'
+        short: "emroycure",
+        institution: "08: Emroy University",
+        entityId: "https://login.emory.edu/idp/shibboleth"
     },
     {
-        short: 'pitt',
-        institution: 'University of Pittsburgh',
-        entityId: 'https://passport.pitt.edu/idp/shibboleth'
+        short: "umncure",
+        institution: "11: University of Minnesota Children’s Hospital",
+        entityId: "urn:mace:incommon:umn.edu"
     },
     {
-        short: 'uthsa',
-        institution: 'University of Texas Health San Antonio',
-        entityId: 'https://shib.uthscsa.edu/idp/shibboleth'
+        short: "nationwidecure",
+        institution: "14: Nationwide Children's Hospital",
+        entityId: "https://sso.nationwidechildrens.org/idp"
     },
     {
-        short: 'washu',
-        institution: 'Washington University in St Louis',
-        entityId: 'https://login.wustl.edu/idp/shibboleth'
+        short: "wisconsincure",
+        institution: "17: University of Wisconsin, Madison",
+        entityId: "https://login.wisc.edu/idp/shibboleth"
     },
     {
-        short: 'yale',
-        institution: 'Yale University',
-        entityId: 'https://auth.yale.edu/idp/shibboleth'
+        short: "ohsucure",
+        institution: "18: Oregon Health and Science University",
+        entityId: "https://idp.ohsu.edu/idp/shibboleth"
     },
     {
-        short: 'nih',
-        institution: 'National Institutes of Health',
-        entityId: 'urn:mace:incommon:nih.gov'
+        short: "uabchildcure",
+        institution: "19: University of Alabama, Birmingham, Children’s of Alabama",
+        entityId: "urn:mace:incommon:uab.edu"
     },
     {
-        short: 'princeton',
-        institution: 'Princeton University',
-        entityId: 'https://idp.princeton.edu/idp/shibboleth'
+        short: "caseneptune",
+        institution: "20: Case Western Reserve University",
+        entityId: "urn:mace:incommon:case.edu"
     },
     {
-        short: 'duke',
-        institution: 'Duke University',
-        entityId: 'urn:mace:incommon:duke.edu'
+        short: "wustlcure",
+        institution: "22: Washington University/ St. Louis School of Medicine",
+        entityId: "https://login.wustl.edu/idp/shibboleth"
     },
     {
-        short: 'jhu',
-        institution: 'Johns Hopkins',
-        entityId: 'urn:mace:incommon:johnshopkins.edu'
+        short: "uclaneptune",
+        institution: "22: Harbor - UCLA",
+        entityId: "urn:mace:incommon:ucla.edu"
     },
     {
-        short: 'stanford',
-        institution: 'Stanford University',
-        entityId: 'urn:mace:incommon:stanford.edu'
+        short: "miamicure",
+        institution: "24: University of Miami (Pediatric)",
+        entityId: "https://caneid.miami.edu/idp/shibboleth"
     },
     {
-        short: 'vanderbilt',
-        institution: 'Vanderbilt University',
-        entityId: 'https://sso-login-uat.vanderbilt.edu'
+        short: "mayoadultneptune",
+        institution: "24: Mayo Clinic",
+        entityId: "http://login.mayo.edu/adfs/services/trust"
     },
     {
-        short: 'cwru',
-        institution: 'Case Western Reserve University',
-        entityId: 'urn:mace:incommon:case.edu'
+        short: "ukycure",
+        institution: "25: University of Kentucky",
+        entityId: "https://ukidp.uky.edu/idp/shibboleth"
     },
     {
-        short: 'north',
-        institution: 'Northwestern University',
-        entityId: 'urn:mace:incommon:northwestern.edu'
+        short: "virginiacure",
+        institution: "26: University of Virginia",
+        entityId: "urn:mace:incommon:virginia.edu"
     },
     {
-        short: 'cincinnati',
-        institution: 'University of Cincinnati',
-        entityId: 'https://login.uc.edu/idp/shibboleth'
+        short: "miamiadultneptune",
+        institution: "26: University of Miami",
+        entityId: "https://caneid.miami.edu/idp/shibboleth"
     },
     {
-        short: 'ms',
-        institution: 'Icahn School of Medicine at Mount Sinai',
-        entityId: 'https://sso.mssm.edu/idp'
+        short: "ecucure",
+        institution: "27: East Carolina University",
+        entityId: "https://sso.ecu.edu/idp/shibboleth"
     },
     {
-        short: 'arizona',
-        institution: 'University of Arizona',
-        entityId: 'urn:mace:incommon:arizona.edu'
+        short: "oucure",
+        institution: "28: University of Oklahoma Health Sciences Center",
+        entityId: "https://shib.ou.edu/idp/shibboleth"
     },
     {
-        short: 'florida',
-        institution: 'University of Florida',
-        entityId: 'https://login.ufl.edu/idp/shibboleth'
+        short: "upennneptune",
+        institution: "28: University of Pennsylvania",
+        entityId: "https://idp.pennkey.upenn.edu/idp/shibboleth"
     },
     {
-        short: 'illinois',
-        institution: 'University of Illinois Chicago',
-        entityId: 'https://shibboleth.uic.edu/shibboleth'
+        short: "ucdenvercure",
+        institution: "29: University of Colorado-Children’s Colorado",
+        entityId: "https://idcs-6dfbdd810afa4d509f6cfc191d612acd.identity.oraclecloud.com:443/fed"
     },
     {
-        short: 'minnesota',
-        institution: 'University of Minnesota',
-        entityId: 'urn:mace:incommon:umn.edu'
+        short: 'uwneptune',
+        institution: '29: University of Washington',
+        entityId: 'urn:mace:incommon:washington.edu'
     },
     {
-        short: 'ncch',
-        institution: 'University of North Carolina at Chapel Hill',
-        entityId: 'urn:mace:incommon:unc.edu'
+        short: "mayochildcure",
+        institution: "31: Mayo Clinic (Pediatric)",
+        entityId: "http://login.mayo.edu/adfs/services/trust"
     },
     {
-        short: 'anschutz',
-        institution: 'University of Colorado Denver | Anschutz Medical Campus',
-        entityId: 'https://idcs-6dfbdd810afa4d509f6cfc191d612acd.identity.oraclecloud.com:443/fed'
+        short: 'columbianeptune',
+        institution: '31: Columbia University',
+        entityId: 'urn:mace:incommon:columbia.edu'
     },
     {
-        short:'heidelberg',
-        institution: 'Universität Heidelberg',
-        entityId: 'https://idp.uni-heidelberg.de'
+        short: "templeneptune",
+        institution: "32: Temple University",
+        entityId: "https://fim.temple.edu/idp/shibboleth"
+    },
+    {
+        short: "upenncure",
+        institution: "33: University of Pennsylvania",
+        entityId: "https://idp.pennkey.upenn.edu/idp/shibboleth"
+    },
+    {
+        short: "emroyneptune",
+        institution: "33: Emroy University",
+        entityId: "https://login.emory.edu/idp/shibboleth"
+    },
+    {
+        short: "cwrucure",
+        institution: "34: Case Western University",
+        entityId: "urn:mace:incommon:case.edu"
+    },
+    {
+        short: "wfuneptune",
+        institution: "34: Wake Forest",
+        entityId: "https://webauth.wfunet.wfu.edu/saml/saml2/idp/metadata.php"
+    },
+    {
+        short: "jhopcure",
+        institution: "36: Johns Hopkins University",
+        entityId: "urn:mace:incommon:johnshopkins.edu"
+    },
+    {
+        short: "stanfordneptune",
+        institution: "36: Stanford University",
+        entityId: "urn:mace:incommon:stanford.edu"
+    },
+    {
+        short: "mayoadultcure",
+        institution: "37: Mayo Clinic (Adult)",
+        entityId: "http://login.mayo.edu/adfs/services/trust"
+    },
+    {
+        short: "umnneptune",
+        institution: "37: University of Minnesota",
+        entityId: "urn:mace:incommon:umn.edu"
+    },
+    {
+        short: "dukeneptune",
+        institution: "39: Duke Universiy",
+        entityId: "urn:mace:incommon:duke.edu"
+    },
+    {
+        short: "nyucure",
+        institution: "40: New York University",
+        entityId: "urn:mace:incommon:nyu.edu"
+    },
+    {
+        short: "utsouthneptune",
+        institution: "40: University of Texas Southwestern",
+        entityId: "https://shib2.swmed.edu/idp/shibboleth"
+    },
+    {
+        short: "stanfordcure",
+        institution: "43: Stanford University",
+        entityId: "urn:mace:incommon:stanford.edu"
+    },
+    {
+        short: "kumcneptune",
+        institution: "43: Kansas University Medical Center",
+        entityId: "https://cas.kumc.edu/idp/shibboleth"
+    },
+    {
+        short: "muscneptune",
+        institution: "44: Medical University of South Carolina",
+        entityId: "https://shibbolethidp.musc.edu/idp/shibboleth"
+    },
+    {
+        short: "miamiadultcure",
+        institution: "45: University of Miami (Adult)",
+        entityId: "https://caneid.miami.edu/idp/shibboleth"
+    },
+    {
+        short: "osuneptune",
+        institution: "45: Ohio State University",
+        entityId: "urn:mace:incommon:osu.edu"
+    },
+    {
+        short: 'umcure',
+        institution: '46: University of Michigan',
+        entityId: 'https://shibboleth.umich.edu/idp/shibboleth'
+    },
+    {
+        short: "ucsfneptune",
+        institution: "46: University of California at San Francisco",
+        entityId: "urn:mace:incommon:ucsf.edu"
+    },
+    {
+        short: 'chopcure',
+        institution: "47: Children's Hospital of Philadelphia",
+        entityId: "https://idp.chop.edu/idp/shibboleth"
+    },
+    {
+        short: 'uwcure',
+        institution: '50: University of Washington',
+        entityId: 'urn:mace:incommon:washington.edu'
+    },
+    {
+        short: "templecure",
+        institution: "53: Temple University",
+        entityId: "https://fim.temple.edu/idp/shibboleth"
+    },
+    {
+        short: "utsouthcure",
+        institution: "55: UT Southwestern",
+        entityId: "https://shib2.swmed.edu/idp/shibboleth"
+    },
+    {
+        short: "uabcure",
+        institution: "58: University of Alabama at Birmingham",
+        entityId: "urn:mace:incommon:uab.edu"
+    },
+    {
+        short: "vcucure",
+        institution: "59: Virginia Commonwealth University",
+        entityId: "https://shibboleth.vcu.edu/idp/shibboleth"
+    },
+    {
+        short: "vucure",
+        institution: "60: Vanderbilt University",
+        entityId: "https://sso-login.vanderbilt.edu"
+    },
+    {
+        short: "unmcure",
+        institution: "63: University of New Mexico Health Sciences Center",
+        entityId: "https://unmpidp.unm.edu/idp/shibboleth"
+    },
+    {
+        short: "chidrensnationalcure",
+        institution: "67: Children’s National Medical Center",
+        entityId: "http://fs.childrensnational.org/adfs/services/trust"
+    },
+    {
+        short: "osucure",
+        institution: "69: Ohio State University",
+        entityId: "urn:mace:incommon:osu.edu"
+    },
+    {
+        short: "musccure",
+        institution: "70: Medical University of South Carolina (MUSC – adults only)",
+        entityId: "https://shibbolethidp.musc.edu/idp/shibboleth"
+    },
+    {
+        short: "northwesterncure",
+        institution: "71: Northwestern University",
+        entityId: "urn:mace:incommon:northwestern.edu"
+    },
+    {
+        short: "ucdenverneptune",
+        institution: "148: Children's Hospital Colorado Anschutz",
+        entityId: "https://idcs-6dfbdd810afa4d509f6cfc191d612acd.identity.oraclecloud.com:443/fed"
+    },
+    {
+        short: "columbiadiabetes",
+        institution: "401: Columbia University",
+        entityId: "urn:mace:incommon:columbia.edu"
+    },
+    {
+        short: "upenndiabetes",
+        institution: "433: University of Pennsylvania",
+        entityId: "https://idp.pennkey.upenn.edu/idp/shibboleth"
+    },
+    {
+        short: "uabdiabetes",
+        institution: "458: University of Alabama at Birmingham",
+        entityId: "urn:mace:incommon:uab.edu"
+    },
+    {
+        short: "vcudiabetes",
+        institution: "459: Virginia Commonwealth University",
+        entityId: "https://shibboleth.vcu.edu/idp/shibboleth"
+    },
+    {
+        short: "osudiabetes",
+        institution: "469: Ohio State University",
+        entityId: "urn:mace:incommon:osu.edu"
     }
+
 ].sort(function (a, b) {
     if (a.institution < b.institution) return -1;
     if (a.institution > b.institution) return 1;
