@@ -11,7 +11,7 @@ const kpmpMembers = [
     },
     {
         short: "nyuneptune",
-        institution: "1: NYUMC",
+        institution: "01: NYUMC",
         entityId: "urn:mace:incommon:nyu.edu"
     },
     {
