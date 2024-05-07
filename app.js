@@ -1,7 +1,7 @@
 const kpmpMembers = [
     {
         short: 'umneptune',
-        institution: "0: University of Michigan",
+        institution: "00: University of Michigan",
         entityId: "https://shibboleth.umich.edu/idp/shibboleth"
     },
     {
@@ -187,7 +187,7 @@ const kpmpMembers = [
     },
     {
         short: "dukeneptune",
-        institution: "39: Duke Universiy",
+        institution: "39: Duke University",
         entityId: "urn:mace:incommon:duke.edu"
     },
     {
