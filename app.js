@@ -272,7 +272,7 @@ function getCookie(key) {
     return '';
 }
 
-const baseUrl = 'https://welcome.kpmp.org/Shibboleth.sso/Login?';
+const baseUrl = 'https://welcome.miktmc.org/Shibboleth.sso/Login?';
 
 function getRedirectUri(homebase) {
     const url = baseUrl;
