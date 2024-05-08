@@ -25,12 +25,12 @@ const kpmpMembers = [
         entityId: "urn:mace:incommon:duke.edu"
     },
     {
-        short: 'cchmccure',
+        short: 'cchmc',
         institution: "Cincinnati Children's Hospital Medical Center",
         entityId: "https://access.research.cchmc.org/fed/idp"
     },
     {
-        short: "texastechcure",
+        short: "texastech",
         institution: "Texas Tech University Health Sciences Center",
         entityId: "https://msidp.ttuhsc.edu/adfs/services/trust"
 
@@ -156,32 +156,32 @@ const kpmpMembers = [
         entityId: "https://shibbolethidp.musc.edu/idp/shibboleth"
     },
     {
-        short: "ucsfneptune",
+        short: "ucsf",
         institution: "University of California at San Francisco",
         entityId: "urn:mace:incommon:ucsf.edu"
     },
     {
-        short: 'chopcure',
+        short: 'chop',
         institution: "Children's Hospital of Philadelphia",
         entityId: "https://idp.chop.edu/idp/shibboleth"
     },
     {
-        short: "vcucure",
+        short: "vcu",
         institution: "Virginia Commonwealth University",
         entityId: "https://shibboleth.vcu.edu/idp/shibboleth"
     },
     {
-        short: "vucure",
+        short: "vu",
         institution: "Vanderbilt University",
         entityId: "https://sso-login.vanderbilt.edu"
     },
     {
-        short: "unmcure",
+        short: "unm",
         institution: "University of New Mexico Health Sciences Center",
         entityId: "https://unmpidp.unm.edu/idp/shibboleth"
     },
     {
-        short: "chidrensnationalcure",
+        short: "chidrensnational",
         institution: "Children’s National Medical Center",
         entityId: "http://fs.childrensnational.org/adfs/services/trust"
     },
@@ -195,6 +195,11 @@ const kpmpMembers = [
         institution: "Northwestern University",
         entityId: "urn:mace:incommon:northwestern.edu"
     },
+    {
+        short: "logingov",
+        institution: "Login.gov",
+        entityId: "https://secure.login.gov/"
+    }
 
 ].sort(function (a, b) {
     if (a.institution < b.institution) return -1;
