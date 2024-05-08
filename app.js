@@ -87,7 +87,7 @@ const kpmpMembers = [
     },
     {
         short: "miami",
-        institution: "26: University of Miami",
+        institution: "University of Miami",
         entityId: "https://caneid.miami.edu/idp/shibboleth"
     },
     {
@@ -172,7 +172,7 @@ const kpmpMembers = [
     },
     {
         short: "vucure",
-        institution: "60: Vanderbilt University",
+        institution: "Vanderbilt University",
         entityId: "https://sso-login.vanderbilt.edu"
     },
     {
