@@ -272,7 +272,7 @@ function getCookie(key) {
     return '';
 }
 
-const baseUrl = 'https://upload.kpmp.org/Shibboleth.sso/Login?';
+const baseUrl = 'https://upload.miktmc.org/Shibboleth.sso/Login?';
 
 function getRedirectUri(homebase) {
     const url = baseUrl;
@@ -285,7 +285,7 @@ function getRedirectUri(homebase) {
         console.warn("KPMP wasn't told where to redirect back to, defaulting.");
         // TODO(cspital) figure out a sane fallback if there is no target
         // target = '&target=/';
-        target = 'https://upload.kpmp.org/Shibboleth.sso/Login?' + '&SAMLDS=1&target=%2F&';
+        target = 'https://upload.miktmc.org/Shibboleth.sso/Login?' + '&SAMLDS=1&target=%2F&';
     }
 
     let extra = '';
