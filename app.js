@@ -285,7 +285,7 @@ function getRedirectUri(homebase) {
         console.warn("KPMP wasn't told where to redirect back to, defaulting.");
         // TODO(cspital) figure out a sane fallback if there is no target
         // target = '&target=/';
-        target = 'https://welcome.kpmp.org/Shibboleth.sso/Login?' + '&SAMLDS=1&target=%2F&';
+        target = 'https://welcome.miktmc.org/Shibboleth.sso/Login?' + '&SAMLDS=1&target=%2F&';
     }
 
     let extra = '';
