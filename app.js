@@ -141,6 +141,11 @@ const kpmpMembers = [
         entityId: "urn:mace:incommon:umn.edu"
     },
     {
+        short: "umontreal",
+        institution: "Université de Montréal",
+        entityId: "https://shibboleth.umontreal.ca/idp/shibboleth"
+    },
+    {
         short: "utsouth",
         institution: "University of Texas Southwestern",
         entityId: "https://shib2.swmed.edu/idp/shibboleth"
