@@ -195,11 +195,6 @@ const kpmpMembers = [
         institution: "Northwestern University",
         entityId: "urn:mace:incommon:northwestern.edu"
     },
-    {
-        short: "logingov",
-        institution: "Login.gov",
-        entityId: "https://secure.login.gov/"
-    }
 
 ].sort(function (a, b) {
     if (a.institution < b.institution) return -1;
