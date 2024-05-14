@@ -1,8 +1,103 @@
 const kpmpMembers = [
     {
-        short: 'um',
+        short: 'lsuhsc',
+        institution: "Louisiana State University Health Sciences Center - New Orleans",
+        entityId: "https://sso.lsuhsc.edu/idp"
+    },
+    {
+        short: 'ucla',
+        institution: "University of California, Los Angeles",
+        entityId: "urn:mace:incommon:ucla.edu"
+    },
+    {
+        short: 'einsteinmed',
+        institution: "Albert Einstein College of Medicine",
+        entityId: "https://vbushib.einsteinmed.org/idp/"
+    },
+    {
+        short: 'msu',
+        institution: "Michigan State University",
+        entityId: "urn:mace:incommon:msu.edu"
+    },
+    {
+        short: 'childrensmercy',
+        institution: "Children's Mercy Kansas City",
+        entityId: "https://iam.research.childrensmercy.org/idp/shibboleth"
+    },
+    {
+        short: 'nih',
+        institution: "National Institutes of Health (NIH)",
+        entityId: "urn:mace:incommon:nih.gov"
+    },
+    {
+        short: 'case',
+        institution: "Case Western Reserve University",
+        entityId: "urn:mace:incommon:case.edu"
+    },
+    {
+        short: 'warsaw',
+        institution: "Medical University of Warsaw",
+        entityId: "https://edugain.wum.edu.pl/idp/shibboleth"
+    },
+    {
+        short: 'rush',
+        institution: "Rush University Medical Center",
+        entityId: "https://shibboleth.rush.edu/idp/shibboleth"
+    },
+    {
+        short: 'vanderbilt',
+        institution: "Vanderbilt University",
+        entityId: "https://sso-login.vanderbilt.edu"
+    },
+    {
+        short: 'pitt',
+        institution: "University of Pittsburgh",
+        entityId: "https://passport.pitt.edu/idp/shibboleth"
+    },
+    {
+        short: 'uconn',
+        institution: "University of Connecticut",
+        entityId: "https://shibboleth.uconn.edu/idp/shibboleth"
+    },
+    {
+        short: 'mcw',
+        institution: "Medical College of Wisconsin",
+        entityId: "https://shib.mcw.edu/idp/shibboleth"
+    },
+    {
+        short: 'uiowa',
+        institution: "University of Iowa",
+        entityId: "urn:mace:incommon:uiowa.edu"
+    },
+    {
+        short: 'unc',
+        institution: "University of North Carolina at Chapel Hill",
+        entityId: "urn:mace:incommon:unc.edu"
+    },
+    {
+        short: 'baylor',
+        institution: "Baylor University",
+        entityId: "https://shibboleth-2.baylor.edu/idp/shibboleth"
+    },
+    {
+        short: 'iu',
+        institution: "Indiana University",
+        entityId: "https://idp.login.iu.edu/idp/shibboleth"
+    },
+    {
+        short: 'umich',
         institution: "University of Michigan",
         entityId: "https://shibboleth.umich.edu/idp/shibboleth"
+    },
+    {
+        short: 'utoronto',
+        institution: "University of Toronto",
+        entityId: "https://idpz.utorauth.utoronto.ca/shibboleth"
+    },
+    {
+        short: 'gaslini',
+        institution: "IRCCS Istituto Giannina Gaslini - Genova",
+        entityId: "https://idp-gaslini.irccs.garr.it/idp/shibboleth"
     },
     {
         short: 'columbia',
@@ -16,7 +111,7 @@ const kpmpMembers = [
     },
     {
         short: "jhop",
-        institution: "Johns-Hopkins",
+        institution: "Johns Hopkins",
         entityId: "urn:mace:incommon:johnshopkins.edu"
     },
     {
@@ -119,11 +214,6 @@ const kpmpMembers = [
         short: "temple",
         institution: "Temple University",
         entityId: "https://fim.temple.edu/idp/shibboleth"
-    },
-    {
-        short: "cwu",
-        institution: "Case Western University",
-        entityId: "urn:mace:incommon:case.edu"
     },
     {
         short: "wfu",
