@@ -131,8 +131,8 @@ const kpmpMembers = [
 
     },
     {
-        short: "emroy",
-        institution: "Emroy University",
+        short: "Emory",
+        institution: "Emory University",
         entityId: "https://login.emory.edu/idp/shibboleth"
     },
     {
