@@ -1,3 +1,3 @@
-# kpmp-ds
+# MiKTMC Discovery Service
 
-Contains the Discovery Service for welcome.kpmp.org
+Contains the Shibboleth Discovery Service for welcome.miktmc.org. 
