@@ -453,8 +453,9 @@ $('#google-btn').click(function (e) {
         "httpd://dev-upload.mikmc.org/": "https://apps.cirrusidentity.com/console/ds/s/vpn86rdu?idpentityid=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vZGV2LXVwbG9hZC5taWt0bWMub3JnL3NoaWJib2xldGgiLCJjYWNoZSI6Im5vbmUiLCJpZCI6ImluZGV4In0%3D"
     }
     let target = '';
-    if (params.return && cirrusGoogleUrls[params.return]) {
-        target = cirrusGoogleUrls[params.return]
+    let url = new URL(params.return);
+    if (params.return && cirrusGoogleUrls[url.hostname]) {
+        target = cirrusGoogleUrls[url.hostname]
     } else {
         target = cirrusGoogleUrls["https://qa-upload.miktmc.org/"]
     }
