@@ -368,6 +368,7 @@ function getRedirectUri(homebase) {
     const url = baseUrl;
     const entity = 'entityID=' + homebase.entityId;
 
+
     let target = '';
     if (params.return) {
         target = params.return + '&';
@@ -442,6 +443,20 @@ $('#idp-select-btn').click(function (e) {
     }
 
     const target = getRedirectUri(homebase);
+    window.location.href = target;
+});
+
+$('#google-btn').click(function (e) {
+    const cirrusGoogleUrls = {
+        "https://upload.miktmc.org/": "https://apps.cirrusidentity.com/console/ds/s/r1dyvtf5?idpentityid=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vdXBsb2FkLm1pa3RtYy5vcmcvc2hpYmJvbGV0aCIsImNhY2hlIjoibm9uZSIsImlkIjoiaW5kZXgifQ%3D%3D",
+        "https://qa-upload.miktmc.org/": "https://apps.cirrusidentity.com/console/ds/s/qfk839dl?idpentityid=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vcWEtdXBsb2FkLm1pa3RtYy5vcmcvc2hpYmJvbGV0aCIsImNhY2hlIjoibm9uZSIsImlkIjoiaW5kZXgifQ%3D%3D",
+    }
+    let target = '';
+    if (params.return) {
+        target = cirrusGoogleUrls[params.return]
+    } else {
+        target = cirrusGoogleUrls["https://upload.miktmc.org/"]
+    }
     window.location.href = target;
 });
 
