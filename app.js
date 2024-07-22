@@ -457,7 +457,7 @@ $('#google-btn').click(function (e) {
     if (params.return && cirrusGoogleUrls[url.hostname]) {
         target = cirrusGoogleUrls[url.hostname]
     } else {
-        target = cirrusGoogleUrls["https://qa-upload.miktmc.org/"]
+        target = cirrusGoogleUrls["https://upload.miktmc.org/"]
     }
     window.location.href = target;
 });
