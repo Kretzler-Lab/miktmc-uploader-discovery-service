@@ -368,6 +368,7 @@ function getRedirectUri(homebase) {
     const url = baseUrl;
     const entity = 'entityID=' + homebase.entityId;
 
+
     let target = '';
     if (params.return) {
         target = params.return + '&';
@@ -442,6 +443,22 @@ $('#idp-select-btn').click(function (e) {
     }
 
     const target = getRedirectUri(homebase);
+    window.location.href = target;
+});
+
+$('#google-btn').click(function (e) {
+    const cirrusGoogleUrls = {
+        "upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/r1dyvtf5?idpentityid=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vdXBsb2FkLm1pa3RtYy5vcmcvc2hpYmJvbGV0aCIsImNhY2hlIjoibm9uZSIsImlkIjoiaW5kZXgifQ%3D%3D",
+        "qa-upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/qfk839dl?idpentityid=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vcWEtdXBsb2FkLm1pa3RtYy5vcmcvc2hpYmJvbGV0aCIsImNhY2hlIjoibm9uZSIsImlkIjoiaW5kZXgifQ%3D%3D",
+        "dev-upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/vpn86rdu?idpentityid=https%3A%2F%2Fgoogle.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vZGV2LXVwbG9hZC5taWt0bWMub3JnL3NoaWJib2xldGgiLCJjYWNoZSI6Im5vbmUiLCJpZCI6ImluZGV4In0%3D"
+    }
+    let target = '';
+    let url = new URL(params.return);
+    if (params.return && cirrusGoogleUrls[url.hostname]) {
+        target = cirrusGoogleUrls[url.hostname]
+    } else {
+        target = cirrusGoogleUrls["https://upload.miktmc.org/"]
+    }
     window.location.href = target;
 });
 
