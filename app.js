@@ -463,17 +463,17 @@ $('#google-btn').click(function (e) {
 });
 
 $('#msn-btn').click(function (e) {
-    const cirrusGoogleUrls = {
+    const cirrusMsnUrls = {
         "upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/r1dyvtf5?idpentityid=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vdXBsb2FkLm1pa3RtYy5vcmcvc2hpYmJvbGV0aCIsImNhY2hlIjoibm9uZSIsImlkIjoiaW5kZXgifQ%3D%3D",
         "qa-upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/qfk839dl?idpentityid=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vcWEtdXBsb2FkLm1pa3RtYy5vcmcvc2hpYmJvbGV0aCIsImNhY2hlIjoibm9uZSIsImlkIjoiaW5kZXgifQ%3D%3D",
         "dev-upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/vpn86rdu?idpentityid=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vZGV2LXVwbG9hZC5taWt0bWMub3JnL3NoaWJib2xldGgiLCJjYWNoZSI6Im5vbmUiLCJpZCI6ImluZGV4In0%3D"
     }
     let target = '';
     let url = new URL(params.return);
-    if (params.return && cirrusGoogleUrls[url.hostname]) {
-        target = cirrusGoogleUrls[url.hostname]
+    if (params.return && cirrusMsnUrls[url.hostname]) {
+        target = cirrusMsnUrls[url.hostname]
     } else {
-        target = cirrusGoogleUrls["https://upload.miktmc.org/"]
+        target = cirrusMsnUrls["https://upload.miktmc.org/"]
     }
     window.location.href = target;
 });
