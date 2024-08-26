@@ -216,6 +216,14 @@ body {
     margin: 15px;
 }
 
+#google-btn {
+    cursor:pointer;
+}
+
+#msn-btn {
+    cursor:pointer;
+}
+
 @media screen and (min-width: 768px) {
     .uwid-sponsor-box {
         top: 105px;
