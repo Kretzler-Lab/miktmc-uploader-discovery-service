@@ -79,6 +79,11 @@ const kpmpMembers = [
         institution: "Baylor University",
         entityId: "https://shibboleth-2.baylor.edu/idp/shibboleth"
     },
+    {   
+        short: 'bcm',
+        institution: "Baylor College of Medicine",
+        entityId: "https://fedidp.bcm.edu/idp/shibboleth"
+    },
     {
         short: 'iu',
         institution: "Indiana University",
