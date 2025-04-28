@@ -171,11 +171,6 @@ const kpmpMembers = [
         entityId: "urn:mace:incommon:ucla.edu"
     },
     {
-        short: "ucla",
-        institution: "Harbor - UCLA",
-        entityId: "urn:mace:incommon:ucla.edu"
-    },
-    {
         short: "mayo",
         institution: "Mayo Clinic",
         entityId: "http://login.mayo.edu/adfs/services/trust"
