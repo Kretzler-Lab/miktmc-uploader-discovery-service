@@ -29,11 +29,6 @@ const kpmpMembers = [
         institution: "National Institutes of Health (NIH)",
         entityId: "urn:mace:incommon:nih.gov"
     },
-     {
-        short: 'bcm',
-        institution: "Baylor College of Medicine",
-        entityId: "https://fedidp.bcm.edu/idp/shibboleth"
-    },	
     {
         short: 'case',
         institution: "Case Western Reserve University",
