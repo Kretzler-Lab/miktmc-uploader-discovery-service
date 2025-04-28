@@ -166,6 +166,11 @@ const kpmpMembers = [
         entityId: "https://login.wustl.edu/idp/shibboleth"
     },
     {
+        short: "lundquist",
+        institution: "Lundquist",
+        entityId: "urn:mace:incommon:ucla.edu"
+    },
+    {
         short: "ucla",
         institution: "Harbor - UCLA",
         entityId: "urn:mace:incommon:ucla.edu"
