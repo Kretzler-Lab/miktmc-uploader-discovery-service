@@ -45,11 +45,6 @@ const kpmpMembers = [
         entityId: "https://shibboleth.rush.edu/idp/shibboleth"
     },
     {
-        short: 'vanderbilt',
-        institution: "Vanderbilt University",
-        entityId: "https://sso-login.vanderbilt.edu"
-    },
-    {
         short: 'pitt',
         institution: "University of Pittsburgh",
         entityId: "https://passport.pitt.edu/idp/shibboleth"
