@@ -45,11 +45,6 @@ const kpmpMembers = [
         entityId: "https://shibboleth.rush.edu/idp/shibboleth"
     },
     {
-        short: 'vanderbilt',
-        institution: "Vanderbilt University",
-        entityId: "https://sso-login.vanderbilt.edu"
-    },
-    {
         short: 'pitt',
         institution: "University of Pittsburgh",
         entityId: "https://passport.pitt.edu/idp/shibboleth"
@@ -78,6 +73,11 @@ const kpmpMembers = [
         short: 'baylor',
         institution: "Baylor University",
         entityId: "https://shibboleth-2.baylor.edu/idp/shibboleth"
+    },
+    {   
+        short: 'bcm',
+        institution: "Baylor College of Medicine",
+        entityId: "https://fedidp.bcm.edu/idp/shibboleth"
     },
     {
         short: 'iu',
@@ -161,8 +161,8 @@ const kpmpMembers = [
         entityId: "https://login.wustl.edu/idp/shibboleth"
     },
     {
-        short: "ucla",
-        institution: "Harbor - UCLA",
+        short: "lundquist",
+        institution: "Lundquist",
         entityId: "urn:mace:incommon:ucla.edu"
     },
     {
@@ -268,7 +268,7 @@ const kpmpMembers = [
     {
         short: "vu",
         institution: "Vanderbilt University",
-        entityId: "https://sso-login.vanderbilt.edu"
+        entityId: "https://sso.vanderbilt.edu/idp"
     },
     {
         short: "unm",
@@ -458,6 +458,22 @@ $('#google-btn').click(function (e) {
         target = cirrusGoogleUrls[url.hostname]
     } else {
         target = cirrusGoogleUrls["https://upload.miktmc.org/"]
+    }
+    window.location.href = target;
+});
+
+$('#msn-btn').click(function (e) {
+    const cirrusMsnUrls = {
+        "upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/r1dyvtf5?idpentityid=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vdXBsb2FkLm1pa3RtYy5vcmcvc2hpYmJvbGV0aCIsImNhY2hlIjoibm9uZSIsImlkIjoiaW5kZXgifQ%3D%3D",
+        "qa-upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/qfk839dl?idpentityid=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vcWEtdXBsb2FkLm1pa3RtYy5vcmcvc2hpYmJvbGV0aCIsImNhY2hlIjoibm9uZSIsImlkIjoiaW5kZXgifQ%3D%3D",
+        "dev-upload.miktmc.org": "https://apps.cirrusidentity.com/console/ds/s/vpn86rdu?idpentityid=https%3A%2F%2Fwin-live.cirrusidentity.com%2Fgateway&origParams=eyJlbnRpdHlJRCI6Imh0dHBzOi8vZGV2LXVwbG9hZC5taWt0bWMub3JnL3NoaWJib2xldGgiLCJjYWNoZSI6Im5vbmUiLCJpZCI6ImluZGV4In0%3D"
+    }
+    let target = '';
+    let url = new URL(params.return);
+    if (params.return && cirrusMsnUrls[url.hostname]) {
+        target = cirrusMsnUrls[url.hostname]
+    } else {
+        target = cirrusMsnUrls["https://upload.miktmc.org/"]
     }
     window.location.href = target;
 });
