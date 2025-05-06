@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Release 4.2 [Unreleased]
+## Release 1.2 [Unreleased]
 Brief summary of what's in this release:
 
 ### Breaking changes
