@@ -183,7 +183,7 @@ const kpmpMembers = [
     {
         short: "miami",
         institution: "University of Miami",
-        entityId: "https://caneid.miami.edu/idp/shibboleth"
+        entityId: "https://sso.miami.edu/idp"
     },
     {
         short: "ecu",
