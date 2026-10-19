@@ -185,6 +185,11 @@ const kpmpMembers = [
         institution: "University of Miami",
         entityId: "https://sso.miami.edu/idp"
     },
+        {
+        short: "miami",
+        institution: "University of Miami SSO",
+        entityId: "https://sso.miami.edu/idp"
+    },
     {
         short: "ecu",
         institution: "East Carolina University",
